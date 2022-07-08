@@ -1,0 +1,1 @@
+import{_ as r}from"./app.bee4052f.js";import{r as o,o as t,d as c,k as n}from"./vendor.6870244c.js";const s={},a={class:"w-full min-h-screen bg-blue-100 grid place-items-center"};function _(i,m){const e=o("router-view");return t(),c("main",a,[n(e)])}var p=r(s,[["render",_]]);export{p as default};
