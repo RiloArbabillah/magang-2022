@@ -23,7 +23,8 @@
 		"dev": "vite",
 		"build": "vite-ssg build",
 		"serve": "vite preview",
-		"https-preview": "serve dist"
+		"https-preview": "serve dist",
+		"prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install"
 	},
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.0",
