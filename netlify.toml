@@ -1,2 +1,4 @@
 [build.environment]
-  NPM_FLAGS="--prefix=/dev/null --force"
+  NPM_FLAGS="--prefix=/dev/null"
+[build]
+  ignore = "node ignore_build.js"
