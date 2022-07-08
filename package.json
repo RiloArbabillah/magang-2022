@@ -21,10 +21,9 @@
 	"homepage": "https://github.com/zynth17/vitailse#readme",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite-ssg build --force",
+		"build": "vite-ssg build",
 		"serve": "vite preview",
-		"https-preview": "serve dist",
-		"prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install"
+		"https-preview": "serve dist"
 	},
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.0",
