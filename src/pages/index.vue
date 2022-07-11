@@ -2,6 +2,8 @@
 	import { useStore } from '@/store';
 	import VitailseLogo from '@/assets/logo.png';
 	import UserImage from '@/assets/users.png';
+	import Readme from '@/assets/readme.md';
+
 	useHead({
 		title: 'Magang Vue 2022',
 	});
@@ -12,6 +14,9 @@
 
 <template>
 	<div class="grid place-items-center min-h-[80vh] py-10">
+		<div class="my-10">
+			<Readme />
+		</div>
 		<div>
 			<div class="grid max-w-lg text-center place-items-center">
 				<img :src="UserImage" width="300" class="mx-auto" />
@@ -66,7 +71,7 @@
 			</div>
 		</div>
 		<!-- <router-link
-			:to="{ name: 'other-page' }"
+			:to="{ name: 'markdown' }"
 			class="
 				mt-5
 				text-center
