@@ -58,9 +58,9 @@ export default defineConfig({
 				'apple-touch-icon.png',
 			],
 			manifest: {
-				name: 'Vitailse',
-				short_name: 'Vitailse',
-				description: 'Opinionated vite template with TailwindCSS',
+				name: 'Deka Magang 2022',
+				short_name: 'DM-2022',
+				description: 'Using vite template with TailwindCSS',
 				theme_color: '#076AE0',
 				icons: [
 					{
