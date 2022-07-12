@@ -19,3 +19,8 @@
 ```vue
     variabelArray.splice(indexArray, jumlahArrayYgDihapus);
 ```
+
+### Cara menangkap event click pada button
+```vue
+    <button @click="namaFungsi(variabelInput)" type="button">Tombol</button>
+```
