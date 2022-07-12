@@ -2,8 +2,6 @@
 	import { useStore } from '@/store';
 	import VitailseLogo from '@/assets/logo.png';
 	import UserImage from '@/assets/users.png';
-	import Readme from '@/assets/readme.md';
-	import HariKedua from '@/assets/hariKedua.md';
 
 	useHead({
 		title: 'Magang Vue 2022',
@@ -15,12 +13,6 @@
 
 <template>
 	<div class="grid place-items-center min-h-[80vh] py-10">
-		<!-- <div class="my-10 prose border border-black rounded-md p-10">
-			<Readme />
-		</div>
-		<div class="my-10 prose border border-black rounded-md p-10">
-			<HariKedua />
-		</div> -->
 		<div>
 			<div class="grid max-w-lg text-center place-items-center">
 				<img :src="UserImage" width="300" class="mx-auto" />
@@ -74,17 +66,41 @@
 				<p class="text-sm text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, impedit ipsum alias unde accusamus ut dignissimos a incidunt nemo nam. Labore, dignissimos. Culpa iste doloremque accusantium unde, tenetur magni nesciunt!</p>
 			</div>
 		</div>
-		<router-link
-			:to="{ name: 'jurnal' }"
-			class="
-				mt-5
-				text-center
-				hover:text-gray-200
-				dark:hover:text-gray-500
-				hover:underline
-			"
-			>Halaman Jurnal Harian</router-link
-		>
+		<div class="grid grid-flow-row grid-cols-3 gap-10">
+			<router-link
+				:to="{ name: 'jurnal' }"
+				class="
+					mt-5
+					text-center
+					hover:text-gray-500
+					dark:hover:text-gray-300
+					hover:underline
+				"
+				>Halaman Jurnal Harian</router-link
+			>
+			<router-link
+				:to="{ name: 'todo-list' }"
+				class="
+					mt-5
+					text-center
+					hover:text-gray-500
+					dark:hover:text-gray-300
+					hover:underline
+				"
+				>Halaman Todo List</router-link
+			>
+			<router-link
+				:to="{ name: 'tutorial' }"
+				class="
+					mt-5
+					text-center
+					hover:text-gray-500
+					dark:hover:text-gray-300
+					hover:underline
+				"
+				>Halaman Tutorial</router-link
+			>
+		</div>
 	</div>
 </template>
 
