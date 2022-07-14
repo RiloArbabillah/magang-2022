@@ -48,7 +48,7 @@
 
 <template>
 	<div class="min-h-[80vh]">
-		<div class="max-w-lg mb-10">
+		<div class="max-w-lg mb-10 border border-gray-700 rounded-md p-5">
 			<div class="w-full">
 				<div class="flex justify-end px-4 py-2" :class="{'bg-red-500 rounded-md text-white' : store.temp == 'Error'}">
 					{{ store.temp }}
@@ -57,21 +57,21 @@
 			</div>
 			<div class="w-full grid grid-flow-row grid-cols-4 mt-5 gap-5">
 				<div class="w-full grid grid-flow-row grid-cols-3 gap-5 col-span-3">
-					<button @click="clear()" type="button" class="p-4 bg-gray-100 rounded-md col-span-2">
+					<button @click="clear()" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md col-span-2">
 						Clear
 					</button>
-					<button @click="removeLast()" type="button" class="p-4 bg-gray-100 rounded-md flex items-center justify-center">
+					<button @click="removeLast()" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md flex items-center justify-center">
 						<icon-akar-icons:backspace class="w-6 h-6" />
 					</button>
-					<button @click="addNumber(number)" type="button" class="p-4 bg-gray-100 rounded-md" v-for="(number) in 9" :key="number">
+					<button @click="addNumber(number)" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md" v-for="(number) in 9" :key="number">
 						{{ number }}
 					</button>
-					<button @click="addNumber(0)" type="button" class="p-4 bg-gray-100 rounded-md col-span-3">
+					<button @click="addNumber(0)" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md col-span-3">
 						0
 					</button>
 				</div>
 				<div class="w-full grid grid-flow-row gap-5">
-					<button @click="calculate(operator)" type="button" class="p-4 bg-gray-100 rounded-md" v-for="(type, operator) in operators" :key="operator">
+					<button @click="calculate(operator)" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md" v-for="(type, operator) in operators" :key="operator">
 						{{ type }}
 					</button>
 				</div>
