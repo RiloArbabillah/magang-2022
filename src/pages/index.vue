@@ -225,6 +225,14 @@ const random = () => {
         class="px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
         >Halaman Kalkulator 2</router-link
       >
+      <router-link
+        :to="{ name: 'color-switcher' }"
+        :class="bgList[random()]"
+        class="px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
+        >Color Switcher</router-link
+      >
+    </div>
+    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-5 border-t border-gray-800">
       <a
 				:class="bgList[random()]"
         class="after:content-['_↗'] px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
