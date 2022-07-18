@@ -231,6 +231,12 @@ const random = () => {
         class="px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
         >Color Switcher</router-link
       >
+      <router-link
+        :to="{ name: 'rng' }"
+        :class="bgList[random()]"
+        class="px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
+        >Random Number Generator</router-link
+      >
     </div>
     <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-5 border-t border-gray-800">
       <a
