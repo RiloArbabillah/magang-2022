@@ -228,6 +228,19 @@
 					"
 					>Halaman Kalkulator</router-link
 				>
+				<router-link
+					:to="{ name: 'kalkulator2' }"
+					:class="bgList[random()]"
+					class="
+						px-4 py-3
+						rounded-md
+						text-center
+						hover:invert
+						dark:hover:invert
+						hover:underline
+					"
+					>Halaman Kalkulator 2</router-link
+				>
 		</div>
 	</div>
 </template>
