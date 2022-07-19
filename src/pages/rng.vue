@@ -21,8 +21,14 @@
 				<input disabled class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.input">
 			</div>
 			<div class="w-full grid grid-cols-2 gap-5 mt-5">
-				<input class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.min">
-				<input class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.max">
+				<div>
+					<label for="min">Min</label>
+					<input id="min" class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.min">
+				</div>
+				<div>
+					<label for="max">Max</label>
+					<input id="max" class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.max">
+				</div>
 			</div>
 			<div class="w-full grid grid-flow-row gap-5 mt-5">
 				<button @click="generateRandom()" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md">
