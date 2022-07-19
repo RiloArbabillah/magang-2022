@@ -26,7 +26,7 @@
 			store.input += operator
 		}else{
 			try {
-				store.temp = eval(store.input.replace('X', '*'))
+				store.temp = eval(store.input.replace(/X/g, '*'))
 				store.input = ''
 			} catch (error) {
 				store.temp = 'Error'
@@ -47,10 +47,10 @@
 </script>
 
 <template>
-	<div class="min-h-[80vh]">
+	<div class="min-h-[80vh] dark:text-black">
 		<div class="max-w-lg mb-10 border border-gray-700 rounded-md p-5">
 			<div class="w-full">
-				<div class="flex justify-end px-4 py-2" :class="{'bg-red-500 rounded-md text-white' : store.temp == 'Error'}">
+				<div class="flex justify-end px-4 py-2 dark:text-white" :class="{'bg-red-500 rounded-md text-white' : store.temp == 'Error'}">
 					{{ store.temp }}
 				</div>
 				<input disabled class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.input">
@@ -83,6 +83,7 @@
 				hover:text-gray-500
 				dark:hover:text-gray-200
 				hover:underline
+				dark:text-white
 			"
 			>{{ $t('pages.home') }}</router-link
 		>

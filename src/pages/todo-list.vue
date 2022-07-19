@@ -19,8 +19,8 @@
 
 <template>
 	<div>
-		<div class="min-h-[70vh]">
-			<h1 class="text-xl mb-10">Halaman Todo List</h1>	
+		<div class="min-h-[70vh] dark:text-black">
+			<h1 class="text-xl mb-10 dark:text-white">Halaman Todo List</h1>	
 
 			<div class="flex">
 				<input class="w-full rounded-md" type="text" v-model="variabelInput">

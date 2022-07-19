@@ -27,7 +27,7 @@
 </script>
 
 <template>
-	<div class="min-h-[80vh]">
+	<div class="min-h-[80vh] dark:text-black">
 		<div class="max-w-lg mb-10 border border-gray-700 rounded-md p-5">
 			<div class="w-full">
 				<input class="focus:appearance-none focus:outline-none hover:appearance-none hover:outline-none appearance-none outline-none w-full rounded-md px-4 py-2 text-right" type="number" v-model="store.tinggi">
@@ -37,7 +37,7 @@
 					Generate pyramid
 				</button>
 			</div>
-			<div class="mt-10">
+			<div class="mt-10 dark:text-white">
 				<p id="pyramidTag"></p>
 			</div>
 		</div>
@@ -47,6 +47,7 @@
 				hover:text-gray-500
 				dark:hover:text-gray-200
 				hover:underline
+				dark:text-white
 			"
 			>{{ $t('pages.home') }}</router-link
 		>

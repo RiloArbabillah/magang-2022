@@ -8,11 +8,11 @@
 </script>
 
 <template>
-	<div>
-		<div class="my-10 prose border border-black rounded-md p-10">
-			<Readme />
+	<div class="">
+		<div class="my-10 prose border border-black rounded-md p-10 dark:bg-white">
+			<Readme class="" />
 		</div>
-		<div class="my-10 prose border border-black rounded-md p-10">
+		<div class="my-10 prose border border-black rounded-md p-10 dark:bg-white">
 			<HariKedua />
 		</div>
 		<router-link

@@ -243,6 +243,12 @@ const random = () => {
         class="px-4 py-3 rounded-md text-center items-center justify-center flex hover:invert dark:hover:invert hover:underline"
         >Pyramid Generator</router-link
       >
+      <router-link
+        :to="{ name: 'rdn' }"
+        :class="bgList[random()]"
+        class="px-4 py-3 rounded-md text-center items-center justify-center flex hover:invert dark:hover:invert hover:underline"
+        >Remove Duplicate Number</router-link
+      >
     </div>
     <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-5 border-t border-gray-800">
       <a

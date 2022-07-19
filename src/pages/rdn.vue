@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	useHead({
-		title: 'rng',
+		title: 'rdn',
 	});
 
 	import { useStore } from '@/store';
@@ -20,19 +20,15 @@
 			<div class="w-full">
 				<input disabled class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.input">
 			</div>
-			<div class="w-full grid grid-cols-2 gap-5 mt-5">
+			<div class="w-full grid gap-5 mt-5">
 				<div>
-					<label class="dark:text-white" for="min">Min</label>
+					<label for="min">Min</label>
 					<input id="min" class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.min">
-				</div>
-				<div>
-					<label class="dark:text-white" for="max">Max</label>
-					<input id="max" class="w-full rounded-md px-4 py-2 text-right" type="text" v-model="store.max">
 				</div>
 			</div>
 			<div class="w-full grid grid-flow-row gap-5 mt-5">
 				<button @click="generateRandom()" type="button" class="border border-gray-700 p-4 bg-gray-100 rounded-md">
-					Generate RNG
+					Remove Duplicate Number
 				</button>
 			</div>
 		</div>
@@ -42,7 +38,6 @@
 				hover:text-gray-500
 				dark:hover:text-gray-200
 				hover:underline
-				dark:text-white
 			"
 			>{{ $t('pages.home') }}</router-link
 		>
@@ -52,5 +47,5 @@
 <style scoped></style>
 
 <route lang="yaml">
-name: rng
+name: rdn
 </route>

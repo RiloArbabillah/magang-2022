@@ -46,9 +46,9 @@
 
 <template>
 	<div>
-		<div class="border rounded-md p-5 border-black max-w-lg mb-10">
+		<div class="border rounded-md p-5 border-black max-w-lg mb-10 dark:text-black">
 			<div class="grid gap-5">
-				<div class="text-right px-2 py-2" :class="[
+				<div class="text-right px-2 py-2 dark:text-white rounded-md" :class="[
 					store.temp == 'Error' ? 'bg-red-500 text-white rounded-md' : '',
 					checkInteger(store.temp)
 				]">

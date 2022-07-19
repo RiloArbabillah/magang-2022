@@ -8,8 +8,8 @@
 
 <template>
 	<div>
-		<div class="my-10 prose border border-black rounded-md p-10">
-			<Tutorial />
+		<div class="my-10 prose border border-black rounded-md p-10 dark:bg-white">
+			<Tutorial class="" />
 		</div>
 		<router-link
 			:to="{ name: 'home' }"
