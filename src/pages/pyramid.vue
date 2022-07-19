@@ -11,9 +11,9 @@
 		let doc = document.getElementById("pyramidTag")
 		doc.innerHTML = ''
 		for (let y = 1; y <= tinggi; y++) {
-			let spasi = '&nbsp;'.repeat(tinggi - y)
+			// let spasi = '&nbsp;'.repeat(tinggi - y)
 			let str = '*'.repeat(y * 2 - 1)
-			doc.innerHTML += (spasi + str + spasi) + '<br>'
+			doc.innerHTML += (str) + '<br>'
 		}
 	}
 
