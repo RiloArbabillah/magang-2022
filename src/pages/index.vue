@@ -240,7 +240,7 @@ const random = () => {
       <router-link
         :to="{ name: 'pyramid' }"
         :class="bgList[random()]"
-        class="px-4 py-3 rounded-md text-center items-center hover:invert dark:hover:invert hover:underline"
+        class="px-4 py-3 rounded-md text-center items-center justify-center flex hover:invert dark:hover:invert hover:underline"
         >Pyramid Generator</router-link
       >
     </div>
