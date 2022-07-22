@@ -30,7 +30,7 @@ import Icons from "@/components/Icons.vue";
         </div>
         <div class="row-span-4 md:row-span-3 flex flex-col justify-center items-center md:items-start text-center md:text-left">
           <div
-            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-wider leading-tight mb-8"
+            class="text-1xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wider leading-tight mb-8"
           >
             The ultimate app that
             <br />
