@@ -13,7 +13,12 @@
 [![Tugas 1 Khadafi](@/assets/img/khadafi1.png "Tampilan Tugas Desain 1 Khadafi")]()
 
 ### Tugas 2
+
+#### Halaman Login
 [![Tugas 2 Khadafi](@/assets/img/khadafi2.png "Tampilan Tugas Desain 2 Khadafi")]()
+
+#### Halaman Sign Up
+[![Tugas 2 Khadafi](@/assets/img/khadafi2.1.png "Tampilan Tugas Desain 2 Khadafi")]()
 
 --------------------------------------------------------------------------------------
 
