@@ -194,7 +194,7 @@ const random = () => {
         </ul>
       </div>
     </div>
-    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10">
+    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
       <router-link
         :to="{ name: 'jurnal' }"
         :class="bgList[random()]"
@@ -256,7 +256,7 @@ const random = () => {
         >Tugas Desain</router-link
       >
     </div>
-    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-5 border-t border-gray-800">
+    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
       <a
 				:class="bgList[random()]"
         class="after:content-['_↗'] px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
@@ -281,6 +281,13 @@ const random = () => {
       >
         Rafi
       </a>
+    </div>
+    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
+      <router-link
+        :to="{ name: 'nilai' }"
+        class="col-span-3 px-4 py-3 rounded-md text-center items-center justify-center flex bg-red-500 text-white font-bold text-lg hover:bg-red-800"
+        >Nilai</router-link
+      >
     </div>
   </div>
 </template>
