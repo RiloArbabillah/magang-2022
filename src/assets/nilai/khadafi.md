@@ -77,7 +77,7 @@
 ## Gambar
 
 ### Tugas 1
-[![Tugas 1 agus](@/assets/img/agus1.png "Tampilan Tugas Desain 1 agus")]()
+<!-- [![Tugas 1 agus](@/assets/img/agus1.png "Tampilan Tugas Desain 1 agus")]() -->
 
 ### Tugas 2
-[![Tugas 2 agus](@/assets/img/agus2.png "Tampilan Tugas Desain 2 agus")]()
+<!-- [![Tugas 2 agus](@/assets/img/agus2.png "Tampilan Tugas Desain 2 agus")]() -->
