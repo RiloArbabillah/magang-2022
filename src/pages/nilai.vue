@@ -1,5 +1,5 @@
 <script setup lang="ts">
-	import Khadafi from '@/assets/nilai/khadafi.md';
+	import Desain from '@/assets/nilai/desain.md';
 
 	useHead({
 		title: 'nilai',
@@ -9,7 +9,7 @@
 <template>
 	<div class="w-full flex flex-col place-items-center">
 		<div class="my-10 prose border border-black rounded-md p-10 dark:bg-white max-w-7xl w-full">
-			<Khadafi class="" />
+			<Desain class="" />
 		</div>
 		<router-link
 			:to="{ name: 'home' }"
