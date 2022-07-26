@@ -255,6 +255,12 @@ const random = () => {
         class="px-4 py-3 rounded-md text-center items-center justify-center flex hover:invert dark:hover:invert hover:underline"
         >Tugas Desain</router-link
       >
+      <router-link
+        :to="{ name: 'desain-test' }"
+        :class="bgList[random()]"
+        class="px-4 py-3 rounded-md text-center items-center justify-center flex hover:invert dark:hover:invert hover:underline"
+        >Test Desain</router-link
+      >
     </div>
     <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
       <a
