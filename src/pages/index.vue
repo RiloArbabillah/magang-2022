@@ -262,7 +262,7 @@ const random = () => {
         >Test Desain</router-link
       >
     </div>
-    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
+    <div class="max-w-2xl w-full grid grid-flow-row grid-cols-4 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
       <a
 				:class="bgList[random()]"
         class="after:content-['_↗'] px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
@@ -286,6 +286,14 @@ const random = () => {
         href="https://magang-rafi.netlify.app/"
       >
         Rafi
+      </a>
+      <a
+				:class="bgList[random()]"
+        class="after:content-['_↗'] px-4 py-3 rounded-md text-center hover:invert dark:hover:invert hover:underline"
+        target="_blank"
+        href="https://magang-bagus.netlify.app/"
+      >
+        Bagus
       </a>
     </div>
     <div class="max-w-2xl w-full grid grid-flow-row grid-cols-3 gap-5 mt-10 pt-10 border-t border-gray-800 dark:border-gray-300">
